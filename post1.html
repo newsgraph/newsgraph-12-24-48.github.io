@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How much software do we really need? — Shegufta Hasnine's Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="site-title"><a href="index.html">Shegufta Hasnine's Blog</a></div>
+      <p class="site-subtitle">Random ramblings and impalpable postulations</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article>
+        <h1>How much software do we really need?</h1>
+        <div class="article-meta">24 November 2026</div>
+        <hr>
+
+        <p>I haven't written this yet but I'll get there</p>
+
+
+
+        <!-- div class="viz-block" id="sample-viz">
+          <div class="viz-title">Sample Interactive Ledger (Click a row)</div>
+          <div class="viz-bars" id="viz-bars"></div>
+          <div class="viz-note" id="viz-note">Select a year to read its annotation.</div>
+        </div -->
+
+
+      </article>
+
+      <a class="back-link" href="index.html">&larr; Back home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Shegufta Hasnine</p>
+    </div>
+  </footer>
+
+  <!-- script>
+    const header = document.getElementById("site-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 80) {
+        header.classList.add("is-scrolled");
+      } else if (window.scrollY < 10) {
+        header.classList.remove("is-scrolled");
+      }
+    }, { passive: true });
+
+    const data = [
+      { label: "2023", value: 42, note: "2023: Baseline year before structural tariff changes." },
+      { label: "2024", value: 68, note: "2024: Sharp increase during peak summer midday surplus." },
+      { label: "2025", value: 85, note: "2025: Highest recorded variance across 15-minute intervals." },
+      { label: "2026", value: 74, note: "2026: Partial stabilization as storage capacity expanded." }
+    ];
+
+    const barsEl = document.getElementById("viz-bars");
+    const noteEl = document.getElementById("viz-note");
+
+    data.forEach((item) => {
+      const row = document.createElement("div");
+      row.className = "viz-row";
+      row.innerHTML = `
+        <span>${item.label}</span>
+        <div class="viz-bar-track"><div class="viz-bar" style="width: ${item.value}%"></div></div>
+        <span>${item.value}%</span>
+      `;
+      row.addEventListener("click", () => {
+        document.querySelectorAll(".viz-row").forEach(r => r.classList.remove("active"));
+        row.classList.add("active");
+        noteEl.textContent = item.note;
+      });
+      barsEl.appendChild(row);
+    });
+  </script -->
+
+</body>
+</html>
