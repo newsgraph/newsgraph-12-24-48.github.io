@@ -1,7 +1,65 @@
-<html>
-  <title>Shegufta Hasnine's Blog</title>
-  <body>
-    <h1>This is my personal blog</h1>
-    <p>Welcome.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Site Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="index.html">Shegufta Hasnine's Blog</a></h1>
+      <p class="site-subtitle">Random ramblings and impalpable postulations</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <ul class="post-list">
+        <li>
+          <div class="post-header">
+            <a href="post1.html">How much software do we really need?</a>
+            <span class="post-date">24 Nov 2026</span>
+          </div>
+          <p class="post-teaser">A professor says AI will make high level languages obsolete. I have a vaguely annoyed response.</p>
+        </li>
+        <li>
+          <div class="post-header">
+            <a href="#"></a>
+            <span class="post-date">12 Nov 2026</span>
+          </div>
+          <p class="post-teaser"></p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Your Name</p>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById("site-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 80) {
+        header.classList.add("is-scrolled");
+      } else if (window.scrollY < 10) {
+        header.classList.remove("is-scrolled");
+      }
+    }, { passive: true });
+    if (window.scrollY > 80 && (document.documentElement.scrollHeight - window.innerHeight > 220)) {
+  header.classList.add("is-scrolled");
+} else if (window.scrollY < 10) {
+  header.classList.remove("is-scrolled");
+}
+  </script>
+
+</body>
 </html>
